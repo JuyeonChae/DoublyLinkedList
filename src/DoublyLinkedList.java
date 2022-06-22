@@ -8,14 +8,19 @@ public class DoublyLinkedList {
     }
 
     public void add(Data s) {
+        Node temp = top;
+
+        if (top == null) {
+
+        }
 
     }
 
-    public Data remove(int index) {
-
-    }
-
-    public Data get(int index) {
-
-    }
+//    public Data remove(int index) {
+//
+//    }
+//
+//    public Data get(int index) {
+//
+//    }
 }

@@ -9,7 +9,6 @@ public class ListGUI extends JFrame implements ActionListener {
             public void run() {
                 try {
                     ListGUI frame = new ListGUI();
-                    frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -18,6 +17,15 @@ public class ListGUI extends JFrame implements ActionListener {
     }
 
     public ListGUI() {
+        JFrame frame = new JFrame("Smartie");
+        frame.setSize(900, 900);
+        frame.setVisible(true);
+
+        JLabel textLabel = new JLabel("Test");
+        textLabel.setText("Accounts Manager");
+        textLabel.setLayout(null);
+
+        frame.add(textLabel);
 
     }
 

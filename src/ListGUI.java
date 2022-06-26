@@ -25,9 +25,39 @@ public class ListGUI extends JFrame implements ActionListener {
         JLabel title = new JLabel("Account Manager");
         title.setFont(f1);
 
-        frame.add(title);
+//        JLabel ID = new JLabel("ID");
+//        JTextField IDField = new JTextField(null, 20);
+//
+//        JLabel password = new JLabel("Password");
+//        JTextField passwordField = new JTextField(null, 20);
+//
+//        JLabel website = new JLabel("website");
+//        JTextField websiteField = new JTextField(null, 20);
+
+        frame.add(title, new FlowLayout());
         frame.setLayout(new FlowLayout());
+
+//        frame.add(ID);
+//        frame.add(IDField);
+
         frame.setVisible(true);
+    }
+
+    public void textFields() {
+        JPanel textPanel = new JPanel();
+        textPanel.setSize(900, 24);
+
+        JLabel ID = new JLabel("ID");
+        JTextField IDField = new JTextField(null, 20);
+
+        JLabel password = new JLabel("Password");
+        JTextField passwordField = new JTextField(null, 20);
+
+        JLabel website = new JLabel("website");
+        JTextField websiteField = new JTextField(null, 20);
+
+        frame.add(ID);
+        frame.add(IDField);
     }
 
     @Override

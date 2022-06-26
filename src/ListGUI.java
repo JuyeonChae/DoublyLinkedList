@@ -17,16 +17,17 @@ public class ListGUI extends JFrame implements ActionListener {
     }
 
     public ListGUI() {
-        JFrame frame = new JFrame("Smartie");
+        Font f1 = new Font("Arial", Font.BOLD, 24);
+
+        JFrame frame = new JFrame("Account Manager");
         frame.setSize(900, 900);
+
+        JLabel title = new JLabel("Account Manager");
+        title.setFont(f1);
+
+        frame.add(title);
+        frame.setLayout(new FlowLayout());
         frame.setVisible(true);
-
-        JLabel textLabel = new JLabel("Test");
-        textLabel.setText("Accounts Manager");
-        textLabel.setLayout(null);
-
-        frame.add(textLabel);
-
     }
 
     @Override
